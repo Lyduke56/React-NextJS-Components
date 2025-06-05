@@ -1,0 +1,79 @@
+html {
+    background-color: rgb(216, 220, 255);
+}
+
+header {
+    text-align: center;
+    font-family: 'Impact';
+    font-size: 75px;
+}
+
+.center{
+    align-content: center;
+}
+
+.section-title{
+    flex: 1.5;
+    font-family: 'Impact';
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.taskbar{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.actions{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    height: 775px;
+    width: 800px;
+    margin: 25px auto 25px auto;
+}
+
+#tasklist{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 164);
+    color: rgb(0, 0, 0);
+    height: 800px;
+    margin-top: 7px;
+    margin: 1.5px;
+    padding: 15px;
+}
+
+.tasks{
+    text-indent: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+  background-color: #ffffff;
+  font-family: 'Impact';
+  color: rgb(0, 0, 0);                
+  padding: 10px;    
+  border: none;                
+  border-radius: 5px;          
+  cursor: pointer;            
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #cbcaff;
+}
