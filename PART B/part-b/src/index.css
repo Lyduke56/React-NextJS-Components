@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url(../../../fonts/Minecraft.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AWOG';
+  src: url(../../../fonts/04B_30__.TTF) format('truetype');
+}
+
+html {
+  background-image: url(../../../assets/background.gif);
+  height: 100vh;             
+  background-color: #FFF9E7;   
+  background-repeat: no-repeat;  
+  background-position: center center;  
+  background-size: contain; 
+}
+
+header {
+  text-align: center;
+  font-family: 'AWOG';
+  color: orange;
+  font-size: 75px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
