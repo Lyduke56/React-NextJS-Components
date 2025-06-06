@@ -1,10 +1,27 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AWOG';
+  src: url('../fonts/04B_30__.TTF') format('truetype');
+}
+
 html {
-    background-color: rgb(216, 220, 255);
+    margin: 0;                
+    height: 100vh;             
+    background-color: black;   
+    background-image: url(../assets/background.gif);
+    background-repeat: no-repeat;  
+    background-position: center center;  
+    background-size: contain; 
 }
 
 header {
     text-align: center;
-    font-family: 'Impact';
+    font-family: 'AWOG';
+    color: orange;
     font-size: 75px;
 }
 
@@ -14,7 +31,7 @@ header {
 
 .section-title{
     flex: 1.5;
-    font-family: 'Impact';
+    font-family: 'AWOG';
     font-size: 2rem;
     padding-left: 20px;
 }
@@ -35,9 +52,9 @@ header {
 #todo-list {
     display: flex;
     flex-direction: column;
-    background-color: goldenrod;
+    background-color: #D7B899;
     text-align: center;
-    color: white;
+    color: #5C3A21;
     padding: 8px;
     height: 775px;
     width: 800px;
@@ -48,9 +65,13 @@ header {
     display: flex;
     text-align: left;
     flex-direction: column;
-    background-color: rgb(255, 255, 164);
+    background-color: #FFF9E7;
     color: rgb(0, 0, 0);
+    max-width: 800px;
     height: 800px;
+    max-height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin-top: 7px;
     margin: 1.5px;
     padding: 15px;
@@ -58,14 +79,19 @@ header {
 
 .tasks{
     text-indent: 20px;
+    font-family: 'Minecraft';
+    color:#4B3B2A;
     font-size: 1.5rem;
     line-height: 1.5;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
 }
 
 button {
-  background-color: #ffffff;
-  font-family: 'Impact';
-  color: rgb(0, 0, 0);                
+  background-color: #A1866F;
+  font-family: 'Minecraft';
+  color: #EED9C4;                
   padding: 10px;    
   border: none;                
   border-radius: 5px;          
@@ -75,5 +101,5 @@ button {
 }
 
 button:hover{
-    background-color: #cbcaff;
+    background-color: #7C5C44;
 }
