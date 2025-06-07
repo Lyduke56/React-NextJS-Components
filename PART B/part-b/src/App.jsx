@@ -11,7 +11,7 @@ export default function App() {
         React/NextJS Components
       </h1>
       
-      <WelcomeCard name="Student" />
+      <WelcomeCard name="Clyde Justine" />
       <Counter />
       <StudentInfo />
 

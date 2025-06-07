@@ -6,6 +6,7 @@ export default function Counter() {
 
   return (
     <div className="counter-container">
+      Coffees Today ☕: <br></br>
       <button 
         className="counter-button" 
         onClick={() => setCount(count - 1)}

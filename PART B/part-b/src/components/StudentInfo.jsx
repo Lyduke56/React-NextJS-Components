@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Components.css';
 
 export default function StudentInfo() {
-  const [student, setStudent] = useState({ name: '', age: '' });
+    const [student, setStudent] = useState({ name: '', age: '', course: '' });
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -11,7 +11,7 @@ export default function StudentInfo() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`Student Name: ${student.name}, Age: ${student.age}`);
+    alert(`Student Name: ${student.name}, Age: ${student.age}, Course: ${student.course}`);
   }
 
   return (
@@ -44,6 +44,20 @@ export default function StudentInfo() {
           min="1"
           max="120"
           placeholder="Enter your age"
+        />
+      </div>
+
+      <div className="form-group">
+        <label className="form-label">
+          Course: 
+        </label>
+        <input 
+          className="form-input"
+          name="course" 
+          value={student.course} 
+          onChange={handleChange} 
+          required 
+          placeholder="Enter your course"
         />
       </div>
       
